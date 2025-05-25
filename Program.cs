@@ -1,4 +1,6 @@
-﻿// Обработка трех массивов
+﻿using System;
+
+// Обработка трех массивов
 // Дано 3 одномерных массива A, B и C разного размера
 // Для каждого из них найти требуемое значение, и затем из трёх полученных выбрать экстремум (наибольшее/наименьшее)
 // Если значения экстремумов совпадают, вывести соответствующее сообщение (с указанием имён массивов с совпадающими значениями)
@@ -6,6 +8,8 @@
 // Имейть в виду, что искомых элементов в массиве(ах) может не быть
 // Быть внимательным при определении типа данных элементов массивов
 // Какой из массивов имеет наименьшее количество отрицательных элементов?
+
+
 
 namespace Homework_4._4
 {
@@ -24,9 +28,9 @@ namespace Homework_4._4
          int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
          int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
-         //int m = ClassFor1DArray.SizeColumn();
-         //double[,] arrayDouble = ClassFor1DArray.VvodArray(NumberArrayElementsOne, m);
-         //Console.WriteLine();
+
+         double[] arrayDouble = ClassFor1DArray.VvodArray(elementsOne);
+         Console.WriteLine();
          //double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, NumberArrayElementsOne, m);
          //Console.WriteLine();
       }

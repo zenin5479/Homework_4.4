@@ -27,7 +27,7 @@ namespace Homework_4._4
       {
          string filePath = AppContext.BaseDirectory + "a.txt";
          // Двумерный массив вещественных чисел
-         double[,] arrayDouble = { };
+         double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(filePath);
          if (allLines == null)
@@ -79,12 +79,12 @@ namespace Homework_4._4
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
             Console.WriteLine("Двухмерный числовой массив");
             StringBuilder stringModified = new StringBuilder();
-            arrayDouble = new double[allLines.Length, sizeArray.Length];
+            arrayDouble = new double[allLines.Length];
             char spaceCharacter = ' ';
             int row = 0;
             int column = 0;
             int countCharacter = 0;
-            while (row < arrayDouble.GetLength(0))
+            while (row < arrayDouble.Length)
             {
                string line = allLines[row];
                while (column < sizeArray[row])
@@ -98,8 +98,8 @@ namespace Homework_4._4
                      else
                      {
                         string subLine = stringModified.ToString();
-                        arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        Console.Write(arrayDouble[row, column] + " ");
+                        arrayDouble[row] = Convert.ToDouble(subLine);
+                        Console.Write(arrayDouble[row] + " ");
                         stringModified.Clear();
                         column++;
                      }
@@ -107,8 +107,8 @@ namespace Homework_4._4
                      if (countCharacter == line.Length - 1)
                      {
                         string subLine = stringModified.ToString();
-                        arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        Console.Write(arrayDouble[row, column]);
+                        arrayDouble[row] = Convert.ToDouble(subLine);
+                        Console.Write(arrayDouble[row]);
                         stringModified.Clear();
                         column++;
                      }
