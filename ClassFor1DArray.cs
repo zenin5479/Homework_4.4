@@ -26,7 +26,7 @@ namespace Homework_4._4
       public static double[] VvodArray(int n)
       {
          string filePath = AppContext.BaseDirectory + "a.txt";
-         // Двумерный массив вещественных чисел
+         // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(filePath);
@@ -70,14 +70,14 @@ namespace Homework_4._4
                }
 
                sizeArray[countRow] = countСolumn;
-               //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
+               Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
                countСolumn = 0;
                countRow++;
                countSymbol = 0;
             }
 
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
-            Console.WriteLine("Двухмерный числовой массив");
+            Console.WriteLine("Одномерный числовой массив");
             StringBuilder stringModified = new StringBuilder();
             arrayDouble = new double[allLines.Length];
             char spaceCharacter = ' ';
