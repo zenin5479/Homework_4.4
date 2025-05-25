@@ -23,7 +23,6 @@ namespace Homework_4._4
          return n;
       }
 
-
       public static double[,] VvodArray(int n, int m)
       {
          string filePath = AppContext.BaseDirectory + "a.txt";
