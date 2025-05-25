@@ -18,6 +18,12 @@ namespace Homework_4._4
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
+         string nameArrayOne = "A";
+         string nameArrayTwo = "B";
+         string nameArrayThree = "C";
+
+         numberArrayElements
+
          int n = ClassFor1DArray.SizeRow();
          int m = ClassFor1DArray.SizeColumn();
          double[,] arrayDouble = ClassFor1DArray.VvodArray(n, m);
