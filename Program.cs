@@ -22,9 +22,9 @@ namespace Homework_4._4
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
 
-         int NumberArrayElementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
-         int NumberArrayElementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
-         int NumberArrayElementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+         int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
+         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
+         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
          //int m = ClassFor1DArray.SizeColumn();
          //double[,] arrayDouble = ClassFor1DArray.VvodArray(NumberArrayElementsOne, m);
