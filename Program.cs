@@ -9,8 +9,6 @@
 // Быть внимательным при определении типа данных элементов массивов
 // Какой из массивов имеет наименьшее количество отрицательных элементов?
 
-
-
 namespace Homework_4._4
 {
    internal class Program
@@ -27,7 +25,6 @@ namespace Homework_4._4
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
          int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
          int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
-
 
          double[] arrayDouble = ClassFor1DArray.VvodArray(elementsOne);
          Console.WriteLine();
