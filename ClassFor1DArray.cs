@@ -23,22 +23,6 @@ namespace Homework_4._4
          return n;
       }
 
-      public static int SizeColumn()
-      {
-         int m;
-         do
-         {
-            Console.WriteLine("Введите количество столбцов массива А");
-            int.TryParse(Console.ReadLine(), out m);
-            //m = Convert.ToInt32(Console.ReadLine());
-            if (m <= 0 || m > 20)
-            {
-               Console.WriteLine("Введено не верное значение");
-            }
-         } while (m <= 0 || m > 20);
-
-         return m;
-      }
 
       public static double[,] VvodArray(int n, int m)
       {
@@ -265,7 +249,5 @@ namespace Homework_4._4
          string filePath = AppContext.BaseDirectory + "c.txt";
          File.WriteAllLines(filePath, arrayString);
       }
-
-
    }
 }
