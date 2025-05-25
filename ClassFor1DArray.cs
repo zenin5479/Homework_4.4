@@ -6,7 +6,7 @@ namespace Homework_4._4
 {
    internal class ClassFor1DArray
    {
-      public static int SizeRow()
+      public static int NumberArrayElements()
       {
          int n;
          do
