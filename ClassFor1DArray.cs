@@ -6,12 +6,12 @@ namespace Homework_4._4
 {
    internal class ClassFor1DArray
    {
-      public static int NumberArrayElements()
+      public static int NumberArrayElements(string nameArray)
       {
          int n;
          do
          {
-            Console.WriteLine("Введите количество строк массива А");
+            Console.WriteLine("Введите количество элементов массива {0}", nameArray);
             int.TryParse(Console.ReadLine(), out n);
             //n = Convert.ToInt32(Console.ReadLine());
             if (n <= 0 || n > 20)
@@ -265,6 +265,7 @@ namespace Homework_4._4
          string filePath = AppContext.BaseDirectory + "c.txt";
          File.WriteAllLines(filePath, arrayString);
       }
+
 
    }
 }
