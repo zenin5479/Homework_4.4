@@ -22,11 +22,14 @@ namespace Homework_4._4
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
 
-         int n = ClassFor1DArray.NumberArrayElements(nameArrayOne);
+         int NumberArrayElementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
+         int NumberArrayElementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
+         int NumberArrayElementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+
          int m = ClassFor1DArray.SizeColumn();
-         double[,] arrayDouble = ClassFor1DArray.VvodArray(n, m);
+         double[,] arrayDouble = ClassFor1DArray.VvodArray(NumberArrayElementsOne, m);
          Console.WriteLine();
-         double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, n, m);
+         double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, NumberArrayElementsOne, m);
          Console.WriteLine();
       }
    }
