@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Homework_4._4
 {
-   internal class ClassFor2DArray
+   internal class ClassFor1DArray
    {
       public static int SizeRow()
       {

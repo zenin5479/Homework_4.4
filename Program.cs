@@ -18,11 +18,11 @@ namespace Homework_4._4
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-         int n = ClassFor2DArray.SizeRow();
-         int m = ClassFor2DArray.SizeColumn();
-         double[,] arrayDouble = ClassFor2DArray.VvodArray(n, m);
+         int n = ClassFor1DArray.SizeRow();
+         int m = ClassFor1DArray.SizeColumn();
+         double[,] arrayDouble = ClassFor1DArray.VvodArray(n, m);
          Console.WriteLine();
-         double[,] arraySearch = ClassFor2DArray.InputArray(arrayDouble, n, m);
+         double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, n, m);
          Console.WriteLine();
       }
    }
