@@ -7,13 +7,25 @@
 // Быть внимательным при определении типа данных элементов массивов
 // Какой из массивов имеет наименьшее количество отрицательных элементов?
 
+using System;
+
+
+
 namespace Homework_4._4
 {
    internal class Program
    {
       static void Main(string[] args)
       {
+         // Переводит (,) в (.)
+         //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
+         int n = VariousMethods.SizeRow();
+         int m = VariousMethods.SizeColumn();
+         double[,] arrayDouble = VariousMethods.VvodArray(n, m);
+         Console.WriteLine();
+         double[,] arraySearch = VariousMethods.InputArray(arrayDouble, n, m);
+         Console.WriteLine();
       }
    }
 }
