@@ -29,13 +29,23 @@ namespace Homework_4._4
          double[] arrayDouble = { };
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
-         StreamReader sr = new StreamReader(stream);
-         while (sr.Peek() >= 0)
+         if (stream == null)
          {
-            Console.Write((char)sr.Read());
-            ctroka.Append((char)sr.Read());
-
+            Console.WriteLine("Ошибка при открытии файла для чтения");
          }
+         else
+         {
+            StreamReader sr = new StreamReader(stream);
+            while (sr.Peek() >= 0)
+            {
+               string subLine = sr.ReadLine();
+               Console.Write(subLine);
+               ctroka.Append(subLine);
+            }
+            sr.Close();
+         }
+         Console.WriteLine();
+         Console.WriteLine(ctroka);
 
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
