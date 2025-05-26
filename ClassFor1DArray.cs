@@ -27,17 +27,15 @@ namespace Homework_4._4
       {
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
-
+         StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader sr = new StreamReader(stream);
          while (sr.Peek() >= 0)
          {
             Console.Write((char)sr.Read());
+            ctroka.Append((char)sr.Read());
+
          }
-
-
-
-
 
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
