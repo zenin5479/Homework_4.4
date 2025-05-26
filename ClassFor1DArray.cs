@@ -27,6 +27,9 @@ namespace Homework_4._4
       {
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
+
+         FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
+
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
          if (allLines == null)
