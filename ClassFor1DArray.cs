@@ -23,7 +23,7 @@ namespace Homework_4._4
          return n;
       }
 
-      public static double[] VvodArray(string path, int n)
+      public static double[] VvodArray(string path)
       {
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
@@ -69,7 +69,7 @@ namespace Homework_4._4
                }
 
                sizeArray[countRow] = countСolumn;
-               Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
+               //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
                countСolumn = 0;
                countRow++;
                countSymbol = 0;
