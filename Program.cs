@@ -31,8 +31,8 @@ namespace Homework_4._4
          int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, elementsOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathOne, elementsOne);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathOne, elementsOne);
+         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, elementsTwo);
+         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, elementsThree);
 
          Console.WriteLine();
          //double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, NumberArrayElementsOne, m);
