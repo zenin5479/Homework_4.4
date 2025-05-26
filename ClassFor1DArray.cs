@@ -30,6 +30,17 @@ namespace Homework_4._4
 
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
 
+
+         StreamReader sr = new StreamReader(path);
+         while (sr.Peek() >= 0)
+         {
+            Console.Write((char)sr.Read());
+         }
+
+
+
+
+
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
          if (allLines == null)
