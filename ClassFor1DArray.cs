@@ -29,9 +29,7 @@ namespace Homework_4._4
          double[] arrayDouble = { };
 
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
-
-
-         StreamReader sr = new StreamReader(path);
+         StreamReader sr = new StreamReader(stream);
          while (sr.Peek() >= 0)
          {
             Console.Write((char)sr.Read());
