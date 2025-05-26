@@ -22,11 +22,15 @@ namespace Homework_4._4
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
 
+         string filePathOne = AppContext.BaseDirectory + "a.txt";
+         string filePathTwo = AppContext.BaseDirectory + "b.txt";
+         string filePathThree = AppContext.BaseDirectory + "b.txt";
+
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
          int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
          int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
-         double[] arrayDouble = ClassFor1DArray.VvodArray(elementsOne);
+         double[] arrayDouble = ClassFor1DArray.VvodArray(filePathOne, elementsOne);
          Console.WriteLine();
          //double[,] arraySearch = ClassFor1DArray.InputArray(arrayDouble, NumberArrayElementsOne, m);
          //Console.WriteLine();

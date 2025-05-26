@@ -23,13 +23,12 @@ namespace Homework_4._4
          return n;
       }
 
-      public static double[] VvodArray(int n)
+      public static double[] VvodArray(string path, int n)
       {
-         string filePath = AppContext.BaseDirectory + "a.txt";
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
          // Чтение файла за одну операцию
-         string[] allLines = File.ReadAllLines(filePath);
+         string[] allLines = File.ReadAllLines(path);
          if (allLines == null)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
