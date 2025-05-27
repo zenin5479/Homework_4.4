@@ -25,8 +25,7 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         // Одномерный массив вещественных чисел
-         double[] arrayDouble = { };
+
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          if (stream == null)
@@ -46,7 +45,8 @@ namespace Homework_4._4
          }
          Console.WriteLine();
          Console.WriteLine(ctroka);
-
+         // Одномерный массив вещественных чисел
+         double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
          if (allLines == null)
