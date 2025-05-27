@@ -27,12 +27,12 @@ namespace Homework_4._4
          string filePathThree = AppContext.BaseDirectory + "c.txt";
 
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+         //int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
+         //int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
+         //double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
+         //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 
          Console.ReadKey();
       }
