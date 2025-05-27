@@ -25,25 +25,25 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         StringBuilder ctroka = new StringBuilder();
-         FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
-         if (stream == null)
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
-         }
-         else
-         {
-            StreamReader sr = new StreamReader(stream);
-            while (sr.Peek() >= 0)
-            {
-               string subLine = sr.ReadLine();
-               Console.Write(subLine);
-               ctroka.Append(subLine);
-            }
-            sr.Close();
-         }
-         Console.WriteLine();
-         Console.WriteLine(ctroka);
+         //StringBuilder ctroka = new StringBuilder();
+         //FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
+         //if (stream == null)
+         //{
+         //   Console.WriteLine("Ошибка при открытии файла для чтения");
+         //}
+         //else
+         //{
+         //   StreamReader sr = new StreamReader(stream);
+         //   while (sr.Peek() >= 0)
+         //   {
+         //      string subLine = sr.ReadLine();
+         //      Console.Write(subLine);
+         //      ctroka.Append(subLine);
+         //   }
+         //   sr.Close();
+         //}
+         //Console.WriteLine();
+         //Console.WriteLine(ctroka);
 
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
