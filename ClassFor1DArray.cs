@@ -25,7 +25,6 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          if (stream == null)
