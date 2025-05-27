@@ -25,7 +25,7 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         StringBuilder ctroka = new StringBuilder();
+         StringBuilder stroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          if (stream == null)
          {
@@ -38,12 +38,12 @@ namespace Homework_4._4
             {
                string subLine = sr.ReadLine();
                Console.Write(subLine);
-               ctroka.Append(subLine);
+               stroka.Append(subLine);
             }
             sr.Close();
          }
          Console.WriteLine();
-         Console.WriteLine(ctroka);
+         Console.WriteLine(stroka);
 
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
