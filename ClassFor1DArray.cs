@@ -44,6 +44,7 @@ namespace Homework_4._4
          }
          Console.WriteLine();
          Console.WriteLine(ctroka);
+
          // Одномерный массив вещественных чисел
          double[] arrayDouble = { };
          // Чтение файла за одну операцию
