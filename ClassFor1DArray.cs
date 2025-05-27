@@ -26,8 +26,8 @@ namespace Homework_4._4
       public static double[] VvodArray(string path)
       {
          StringBuilder ctroka = new StringBuilder();
-         FileStream stream = File.Open(path, FileMode.Open);
-         //FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
+         FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
+         //FileStream stream = File.Open(path, FileMode.Open);
          if (stream.CanRead && stream.CanWrite)
          {
             Console.WriteLine("Файл может быть как записан, так и прочитан из него");
