@@ -27,6 +27,16 @@ namespace Homework_4._4
       {
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open);
+         if (stream.CanRead && stream.CanWrite)
+         {
+            Console.WriteLine("Файл может быть как записан, так и прочитан из него.");
+         }
+         else if (stream.CanRead)
+         {
+            Console.WriteLine("Файл недоступен для записи");
+         }
+
+
          if (stream == null)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
