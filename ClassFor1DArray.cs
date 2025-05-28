@@ -37,31 +37,51 @@ namespace Homework_4._4
          Console.WriteLine(path4);
          // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
-         Console.WriteLine("GetFullPath('{0}') возвращает '{1}'", fileName, path6);
+         Console.WriteLine(path6);
 
-         if (stream.CanSeek)
+         try
          {
-            Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
-         }
-         else
-         {
-            Console.WriteLine("Поток, подключенный к {0}, недоступен для поиска", path);
-         }
+            // Текущий каталог
+            string path7 = Directory.GetCurrentDirectory();
+            Console.WriteLine("Текущим каталогом является {0}", path7);
 
-         if (stream.Length == stream.Position) // 0-0
-         {
-            Console.WriteLine("Достигнут конец файла");
+            // Текущий каталог
+            if (path7.Equals(Directory.GetCurrentDirectory()))
+            {
+               Console.WriteLine("Вы находитесь во временном каталоге");
+            }
+            else
+            {
+               Console.WriteLine("Вы не находитесь во временном каталоге");
+            }
          }
-         else
+         catch (Exception e)
          {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
-         }
-
-         if (stream.CanRead) // +
-         {
-            Console.WriteLine("Файл может быть прочитан");
+            Console.WriteLine("Процесс завершился неудачей: {0}", e);
          }
 
+         //if (stream.CanSeek)
+         //{
+         //   Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
+         //}
+         //else
+         //{
+         //   Console.WriteLine("Поток, подключенный к {0}, недоступен для поиска", path);
+         //}
+
+         //if (stream.Length == stream.Position) // 0-0
+         //{
+         //   Console.WriteLine("Достигнут конец файла");
+         //}
+         //else
+         //{
+         //   Console.WriteLine("Ошибка при открытии файла для чтения");
+         //}
+
+         //if (stream.CanRead) // +
+         //{
+         //   Console.WriteLine("Файл может быть прочитан");
+         //}
 
          if (stream != null)
          {
