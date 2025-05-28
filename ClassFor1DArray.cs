@@ -32,6 +32,10 @@ namespace Homework_4._4
          {
             Console.WriteLine("Достигнут конец файла");
          }
+         else
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения");
+         }
 
          if (stream.CanRead && stream.CanWrite)
          {
