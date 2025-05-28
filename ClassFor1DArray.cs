@@ -37,7 +37,7 @@ namespace Homework_4._4
             Console.WriteLine("Поток, подключенный к {0}, недоступен для поиска", path);
          }
 
-         if (stream.Length == stream.Position)
+         if (stream.Length == stream.Position) // 0-0
          {
             Console.WriteLine("Достигнут конец файла");
          }
@@ -46,14 +46,11 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения");
          }
 
-         if (stream.CanRead && stream.CanWrite)
+         if (stream.CanRead) // +
          {
-            Console.WriteLine("Файл может быть как записан, так и прочитан из него");
+            Console.WriteLine("Файл может быть прочитан");
          }
-         else if (stream.CanRead)
-         {
-            Console.WriteLine("Файл недоступен для записи");
-         }
+       
 
          if (stream != null)
          {
