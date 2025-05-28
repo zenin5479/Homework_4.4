@@ -46,7 +46,6 @@ namespace Homework_4._4
             Console.WriteLine("Файл недоступен для записи");
          }
 
-
          if (stream == null)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
