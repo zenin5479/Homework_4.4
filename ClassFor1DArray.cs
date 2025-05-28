@@ -28,24 +28,16 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
-         
+
          // Абсолютный путь к файлу
          Console.WriteLine("Абсолютный путь к файлу в console application");
-
          string fileName = "a.txt";
-          // 4 вариант 
+         // 4 вариант 
          string path4 = Directory.GetCurrentDirectory();
          Console.WriteLine(path4);
          // 6 вариант 
-         string fullPath = Path.GetFullPath(fileName);
-         Console.WriteLine("GetFullPath('{0}') возвращает '{1}'", fileName, fullPath);
-
-
-
-        
-         
-
-
+         string path6 = Path.GetFullPath(fileName);
+         Console.WriteLine("GetFullPath('{0}') возвращает '{1}'", fileName, path6);
 
          if (stream.CanSeek)
          {
