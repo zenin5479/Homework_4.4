@@ -28,6 +28,20 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
+
+
+
+         if (fs.CanSeek)
+         {
+            Console.WriteLine("The stream connected to {0} is seekable.", path);
+         }
+         else
+         {
+            Console.WriteLine("The stream connected to {0} is not seekable.", path);
+         }
+
+
+
          if (stream.Length == stream.Position)
          {
             Console.WriteLine("Достигнут конец файла");
