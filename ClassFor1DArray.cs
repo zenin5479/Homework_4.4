@@ -28,6 +28,18 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
+         string fileName = "a.txt";
+         string fullPath = Path.GetFullPath(fileName);
+         Console.WriteLine("GetFullPath('{0}') returns '{1}'", fileName, fullPath);
+
+
+        
+
+
+
+
+
+
          if (stream.CanSeek)
          {
             Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
