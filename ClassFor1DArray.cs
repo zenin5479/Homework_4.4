@@ -30,11 +30,11 @@ namespace Homework_4._4
          //FileStream stream = File.Open(path, FileMode.Open);
          if (stream.CanSeek)
          {
-            Console.WriteLine("The stream connected to {0} is seekable.", path);
+            Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
          }
          else
          {
-            Console.WriteLine("The stream connected to {0} is not seekable.", path);
+            Console.WriteLine("Поток, подключенный к {0}, недоступен для поиска", path);
          }
 
          if (stream.Length == stream.Position)
