@@ -28,6 +28,11 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
+         if (stream.Length == stream.Position)
+         {
+            Console.WriteLine("Достигнут конец файла");
+         }
+
          if (stream.CanRead && stream.CanWrite)
          {
             Console.WriteLine("Файл может быть как записан, так и прочитан из него");
