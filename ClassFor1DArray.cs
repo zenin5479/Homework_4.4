@@ -46,11 +46,7 @@ namespace Homework_4._4
             Console.WriteLine("Файл недоступен для записи");
          }
 
-         if (stream == null)
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
-         }
-         else
+         if (stream != null)
          {
             StreamReader sr = new StreamReader(stream);
             while (sr.Peek() >= 0)
@@ -59,8 +55,14 @@ namespace Homework_4._4
                Console.Write(subLine);
                ctroka.Append(subLine);
             }
+
             sr.Close();
          }
+         else
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения");
+         }
+
          Console.WriteLine();
          Console.WriteLine(ctroka);
 
