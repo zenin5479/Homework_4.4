@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 using System.Text;
 
@@ -29,20 +28,22 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
-
-
-         string fileName = "a.txt";
-         string fullPath = Path.GetFullPath(fileName);
-         Console.WriteLine("GetFullPath('{0}') возвращает '{1}'", fileName, fullPath);
-
+         
          // Абсолютный путь к файлу
          Console.WriteLine("Абсолютный путь к файлу в console application");
-         // 4 вариант 
+
+         string fileName = "a.txt";
+          // 4 вариант 
          string path4 = Directory.GetCurrentDirectory();
          Console.WriteLine(path4);
          // 6 вариант 
-         string path6 = Path.GetFullPath(fileName);
-         Console.WriteLine(path6);
+         string fullPath = Path.GetFullPath(fileName);
+         Console.WriteLine("GetFullPath('{0}') возвращает '{1}'", fileName, fullPath);
+
+
+
+        
+         
 
 
 
@@ -68,7 +69,7 @@ namespace Homework_4._4
          {
             Console.WriteLine("Файл может быть прочитан");
          }
-       
+
 
          if (stream != null)
          {
