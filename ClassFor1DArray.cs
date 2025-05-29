@@ -28,15 +28,13 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
-         
-         Console.WriteLine("Абсолютный путь к файлу");
          if (File.Exists(path))
          {
             Console.WriteLine("Файл существует");
          }
          else
          {
-            Console.WriteLine("Файл не существует");
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
          if (stream != null)
