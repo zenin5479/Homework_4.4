@@ -39,27 +39,6 @@ namespace Homework_4._4
          string path6 = Path.GetFullPath(fileName);
          Console.WriteLine(path6);
 
-         try
-         {
-            // Текущий каталог
-            string path7 = Directory.GetCurrentDirectory();
-            Console.WriteLine(path7);
-
-            // Текущий каталог
-            if (path7.Equals(Directory.GetCurrentDirectory()))
-            {
-               Console.WriteLine("Вы находитесь во временном каталоге");
-            }
-            else
-            {
-               Console.WriteLine("Вы не находитесь во временном каталоге");
-            }
-         }
-         catch (Exception e)
-         {
-            Console.WriteLine("Процесс завершился неудачей: {0}", e);
-         }
-
          //if (stream.CanSeek)
          //{
          //   Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
