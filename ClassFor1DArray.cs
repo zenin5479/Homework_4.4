@@ -28,11 +28,9 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
-
          // Абсолютный путь к файлу
          Console.WriteLine("Абсолютный путь к файлу в console application");
          string fileName = "a.txt";
-
          string path6 = Path.GetFullPath(fileName);
          if (File.Exists(path6))
          {
@@ -42,6 +40,31 @@ namespace Homework_4._4
          {
             Console.WriteLine("Файл не существует");
          }
+
+
+
+
+         try
+         {
+            using (FileStream myFile = new FileStream(path6, FileMode.Open, FileAccess.Read))
+            {
+               if (myFile.)
+               {
+                  Console.WriteLine("Файл открыт");
+               }
+               else
+               {
+                  Console.WriteLine("Файл не открыт");
+               }
+            }
+         }
+         catch
+         {
+            Console.WriteLine("Некорректный путь к файлу!");
+         }
+
+
+
 
          if (stream != null)
          {
