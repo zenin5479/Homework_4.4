@@ -30,9 +30,6 @@ namespace Homework_4._4
          //FileStream stream = File.Open(path, FileMode.Open);
          
          Console.WriteLine("Абсолютный путь к файлу");
-         string fileName = "a.txt";
-         string path6 = Path.GetFullPath(fileName);
-         Console.WriteLine(path6);
          if (File.Exists(path))
          {
             Console.WriteLine("Файл существует");
