@@ -38,13 +38,13 @@ namespace Homework_4._4
          
          // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
-         if (path6 == " ")
+         if (File.Exists(path6))
          {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
+            Console.WriteLine("Файл существует" );
          }
          else
          {
-            Console.WriteLine(path6);
+            Console.WriteLine("Файл не существует");
          }
 
          if (stream != null)
