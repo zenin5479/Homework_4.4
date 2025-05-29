@@ -33,7 +33,7 @@ namespace Homework_4._4
          string fileName = "a.txt";
          string path6 = Path.GetFullPath(fileName);
          Console.WriteLine(path6);
-         if (File.Exists(path6))
+         if (File.Exists(path))
          {
             Console.WriteLine("Файл существует");
          }
