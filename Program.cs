@@ -34,7 +34,7 @@ namespace Homework_4._4
          }
 
          FileAttributes attributes = File.GetAttributes(filePathOne);
-         if ((attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly)
+         if ((attributes & FileAttributes.ReadOnly) != 0)
          {
             Console.WriteLine("файл, доступный только для чтения");
          }
