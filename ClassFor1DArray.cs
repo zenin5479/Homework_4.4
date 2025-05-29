@@ -32,11 +32,7 @@ namespace Homework_4._4
          // Абсолютный путь к файлу
          Console.WriteLine("Абсолютный путь к файлу в console application");
          string fileName = "a.txt";
-         // 4 вариант 
-         string path4 = Directory.GetCurrentDirectory();
-         Console.WriteLine(path4);
          
-         // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
          if (File.Exists(path6))
          {
