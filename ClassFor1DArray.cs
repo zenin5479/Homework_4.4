@@ -39,15 +39,6 @@ namespace Homework_4._4
          string path6 = Path.GetFullPath(fileName);
          Console.WriteLine(path6);
 
-         //if (stream.CanSeek)
-         //{
-         //   Console.WriteLine("Поток, подключенный к {0}, доступен для поиска", path);
-         //}
-         //else
-         //{
-         //   Console.WriteLine("Поток, подключенный к {0}, недоступен для поиска", path);
-         //}
-
          //if (stream.Length == stream.Position) // 0-0
          //{
          //   Console.WriteLine("Достигнут конец файла");
