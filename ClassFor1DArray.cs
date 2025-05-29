@@ -35,8 +35,7 @@ namespace Homework_4._4
          // 4 вариант 
          string path4 = Directory.GetCurrentDirectory();
          Console.WriteLine(path4);
-
-
+         
          // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
          if (path6 == " ")
