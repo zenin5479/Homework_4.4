@@ -23,11 +23,9 @@ namespace Homework_4._4
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
 
-         string filePathOne = AppContext.BaseDirectory + "a.txt";
+         string filePathOne = Path.GetFullPath("a.txt");
          string filePathTwo = AppContext.BaseDirectory + "b.txt";
          string filePathThree = AppContext.BaseDirectory + "c.txt";
-
-         string path6 = Path.GetFullPath("a.txt");
 
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
          //int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
