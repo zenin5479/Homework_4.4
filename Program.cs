@@ -28,6 +28,8 @@ namespace Homework_4._4
          //int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
          
          string filePathOne = Path.GetFullPath("a.txt");
+         string filePathTwo = AppContext.BaseDirectory + "b.txt";
+         string filePathThree = AppContext.BaseDirectory + "c.txt";
 
          if (File.Exists(filePathOne))
          {
@@ -38,8 +40,7 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         string filePathTwo = AppContext.BaseDirectory + "b.txt";
-         string filePathThree = AppContext.BaseDirectory + "c.txt";
+         
          
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne);
