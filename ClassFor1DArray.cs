@@ -35,9 +35,39 @@ namespace Homework_4._4
          // 4 вариант 
          string path4 = Directory.GetCurrentDirectory();
          Console.WriteLine(path4);
+
+
          // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
+         if (stream.Length == stream.Position)
+         {
+            Console.WriteLine("Достигнут конец файла");
+         }
+         else
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения");
+         }
          Console.WriteLine(path6);
+
+
+         if (stream.Length == stream.Position)
+         {
+            Console.WriteLine("Достигнут конец файла");
+         }
+         else
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения");
+         }
+
+         if (stream.CanRead && stream.CanWrite)
+         {
+            Console.WriteLine("Файл может быть как записан, так и прочитан из него");
+         }
+         else if (stream.CanRead)
+         {
+            Console.WriteLine("Файл недоступен для записи");
+         }
+
 
          //if (stream.Length == stream.Position) // 0-0
          //{
