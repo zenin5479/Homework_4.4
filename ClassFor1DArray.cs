@@ -43,7 +43,7 @@ namespace Homework_4._4
          {
             // Текущий каталог
             string path7 = Directory.GetCurrentDirectory();
-            Console.WriteLine("Текущим каталогом является {0}", path7);
+            Console.WriteLine(path7);
 
             // Текущий каталог
             if (path7.Equals(Directory.GetCurrentDirectory()))
