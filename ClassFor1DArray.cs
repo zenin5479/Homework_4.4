@@ -47,20 +47,6 @@ namespace Homework_4._4
             Console.WriteLine(path6);
          }
 
-         //if (stream.Length == stream.Position) // 0-0
-         //{
-         //   Console.WriteLine("Достигнут конец файла");
-         //}
-         //else
-         //{
-         //   Console.WriteLine("Ошибка при открытии файла для чтения");
-         //}
-
-         //if (stream.CanRead) // +
-         //{
-         //   Console.WriteLine("Файл может быть прочитан");
-         //}
-
          if (stream != null)
          {
             StreamReader sr = new StreamReader(stream);
