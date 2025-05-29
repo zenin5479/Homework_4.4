@@ -39,15 +39,14 @@ namespace Homework_4._4
 
          // 6 вариант 
          string path6 = Path.GetFullPath(fileName);
-         if (path6 != " ")
-         {
-            Console.WriteLine("Достигнут конец файла");
-         }
-         else
+         if (path6 == " ")
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
          }
-         Console.WriteLine(path6);
+         else
+         {
+            Console.WriteLine(path6);
+         }
 
          //if (stream.Length == stream.Position) // 0-0
          //{
