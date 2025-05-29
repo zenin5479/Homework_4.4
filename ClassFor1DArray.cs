@@ -28,31 +28,16 @@ namespace Homework_4._4
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          //FileStream stream = File.Open(path, FileMode.Open);
-         if (File.Exists(path))
+
+         StreamReader sr = new StreamReader(stream);
+         while (sr.Peek() >= 0)
          {
-            Console.WriteLine("Файл существует");
-         }
-         else
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+            string subLine = sr.ReadLine();
+            Console.Write(subLine);
+            ctroka.Append(subLine);
          }
 
-         if (stream != null)
-         {
-            StreamReader sr = new StreamReader(stream);
-            while (sr.Peek() >= 0)
-            {
-               string subLine = sr.ReadLine();
-               Console.Write(subLine);
-               ctroka.Append(subLine);
-            }
-
-            sr.Close();
-         }
-         else
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
-         }
+         sr.Close();
 
          Console.WriteLine();
          Console.WriteLine(ctroka);

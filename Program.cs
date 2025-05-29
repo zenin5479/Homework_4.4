@@ -28,35 +28,22 @@ namespace Homework_4._4
          //int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
          string filePathOne = Path.GetFullPath("a.txt");
-         if (File.Exists(filePathOne))
-         {
-            Console.WriteLine("Файл существует");
-         }
-         else
+         if (!File.Exists(filePathOne))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
          string filePathTwo = Path.GetFullPath("b.txt");
-         if (File.Exists(filePathTwo))
-         {
-            Console.WriteLine("Файл существует");
-         }
-         else
+         if (!File.Exists(filePathTwo))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
+
          string filePathThree = Path.GetFullPath("c.txt");
-         if (File.Exists(filePathThree))
-         {
-            Console.WriteLine("Файл существует");
-         }
-         else
+         if (!File.Exists(filePathThree))
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
-
-
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne);
          //double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
