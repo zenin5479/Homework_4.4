@@ -36,7 +36,7 @@ namespace Homework_4._4
          }
 
          sr.Close();
-         Console.WriteLine();
+         //Console.WriteLine();
          Console.WriteLine(ctroka);
 
          // Одномерный массив вещественных чисел
@@ -52,7 +52,7 @@ namespace Homework_4._4
             indexLines++;
          }
 
-         // Разделение строки на подстроки по пробелу для определения количества столбцов в строке
+         // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          int[] sizeArray = new int[allLines.Length];
          char symbolSpace = ' ';
          int countRow = 0;
