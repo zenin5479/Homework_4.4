@@ -38,10 +38,6 @@ namespace Homework_4._4
          {
             Console.WriteLine("файл, доступный только для чтения");
          }
-         else
-         {
-            Console.WriteLine("файл, не доступный только для чтения");
-         }
 
          string filePathTwo = Path.GetFullPath("b.txt");
          if (!File.Exists(filePathTwo))
