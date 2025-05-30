@@ -33,11 +33,6 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         FileAttributes attributes = File.GetAttributes(filePathOne);
-         if ((attributes & FileAttributes.ReadOnly) == 0)
-         {
-            Console.WriteLine("файл, доступный только для чтения");
-         }
 
          string filePathTwo = Path.GetFullPath("b.txt");
          if (!File.Exists(filePathTwo))
