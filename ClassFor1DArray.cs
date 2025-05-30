@@ -39,8 +39,6 @@ namespace Homework_4._4
          //Console.WriteLine();
          Console.WriteLine(ctroka);
 
-         // Одномерный массив вещественных чисел
-         double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
          Console.WriteLine("Исходный массив строк");
@@ -85,8 +83,9 @@ namespace Homework_4._4
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
          Console.WriteLine("Одномерный числовой массив");
+         // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
-         arrayDouble = new double[allLines.Length];
+         double[] arrayDouble = new double[allLines.Length];
          char spaceCharacter = ' ';
          int row = 0;
          int column = 0;
