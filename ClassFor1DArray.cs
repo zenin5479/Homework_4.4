@@ -129,8 +129,6 @@ namespace Homework_4._4
             column = 0;
             row++;
          }
-         Console.ResetColor();
-
 
          return arrayDouble;
       }
