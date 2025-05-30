@@ -27,8 +27,6 @@ namespace Homework_4._4
       {
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
-         //FileStream stream = File.Open(path, FileMode.Open);
-
          StreamReader sr = new StreamReader(stream);
          while (sr.Peek() >= 0)
          {
