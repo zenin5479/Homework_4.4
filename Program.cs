@@ -33,7 +33,6 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-
          string filePathTwo = Path.GetFullPath("b.txt");
          if (!File.Exists(filePathTwo))
          {
