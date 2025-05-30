@@ -31,13 +31,11 @@ namespace Homework_4._4
          while (sr.Peek() >= 0)
          {
             string subLine = sr.ReadLine();
-
             ctroka.Append(subLine);
-            Console.Write(subLine);
+            //Console.Write(subLine);
          }
 
          sr.Close();
-
          Console.WriteLine();
          Console.WriteLine(ctroka);
 
@@ -45,11 +43,6 @@ namespace Homework_4._4
          double[] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
-         if (allLines == null)
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
-         }
-
          Console.WriteLine("Исходный массив строк");
          int indexLines = 0;
          while (indexLines < allLines.Length)
