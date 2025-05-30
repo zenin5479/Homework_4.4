@@ -39,7 +39,7 @@ namespace Homework_4._4
          //Console.WriteLine();
          Console.WriteLine(ctroka);
 
-         // Чтение файла за одну операцию
+         // Чтение файла за одну операцию - удалить --
          string[] allLines = File.ReadAllLines(path);
          Console.WriteLine("Исходный массив строк");
          int indexLines = 0;
