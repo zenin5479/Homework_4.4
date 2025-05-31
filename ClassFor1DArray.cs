@@ -40,28 +40,32 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int sizeArray; // ?????
+         int sizeArray = 0; // ?????
          char symbolSpace = ' ';
          int countSymbol = 0;
          int countСolumn = 0;
-
-         while (countSymbol < stroka.Length)
+         if (stroka != null)
          {
-            if (symbolSpace == stroka.Length)
+            while (countSymbol < stroka.Length)
             {
-               countСolumn++;
+               if (symbolSpace == stroka.Length)
+               {
+                  countСolumn++;
+               }
+
+               if (countSymbol == stroka.Length - 1)
+               {
+                  countСolumn++;
+               }
+
+               countSymbol++;
             }
 
-            if (countSymbol == stroka.Length - 1)
-            {
-               countСolumn++;
-            }
-
-            countSymbol++;
+            sizeArray = countСolumn;
+            Console.WriteLine("Количество столбцов {0}", countСolumn);
          }
 
-         sizeArray = countСolumn;
-         Console.WriteLine("Количество столбцов {0}", countСolumn);
+
 
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
