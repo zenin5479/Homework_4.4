@@ -43,65 +43,65 @@ namespace Homework_4._4
          // Символ пробела
          char symbolSpace = ' ';
          // Счетчик символов
-         int countSymbol = 0;
+         int symbolСount = 0;
          // Количество столбцов в строке
-         int countСolumn = 0;
+         int сolumn = 0;
          if (stroka != null)
          {
-            while (countSymbol < stroka.Length)
+            while (symbolСount < stroka.Length)
             {
-               if (symbolSpace == stroka[countSymbol])
+               if (symbolSpace == stroka[symbolСount])
                {
-                  countСolumn++;
+                  сolumn++;
                }
 
-               if (countSymbol == stroka.Length - 1)
+               if (symbolСount == stroka.Length - 1)
                {
-                  countСolumn++;
+                  сolumn++;
                }
 
-               countSymbol++;
+               symbolСount++;
             }
 
-            //Console.WriteLine("Количество столбцов {0}", countСolumn);
+            //Console.WriteLine("Количество столбцов {0}", сolumn);
          }
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
          Console.WriteLine("Одномерный числовой массив");
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
-         double[] arrayDouble = new double[countСolumn];
+         double[] arrayDouble = new double[сolumn];
          // Счетчик символов обнуляем
-         countSymbol = 0;
+         symbolСount = 0;
          // Количество столбцов в строке обнуляем
-         countСolumn = 0;
+         сolumn = 0;
          if (stroka != null)
          {
-            while (countSymbol < stroka.Length)
+            while (symbolСount < stroka.Length)
             {
-               if (symbolSpace != stroka[countSymbol])
+               if (symbolSpace != stroka[symbolСount])
                {
-                  stringModified.Append(stroka[countSymbol]);
+                  stringModified.Append(stroka[symbolСount]);
                }
                else
                {
                   string subLine = stringModified.ToString();
-                  arrayDouble[countСolumn] = Convert.ToDouble(subLine);
-                  Console.Write(arrayDouble[countСolumn] + " ");
+                  arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[сolumn] + " ");
                   stringModified.Clear();
-                  countСolumn++;
+                  сolumn++;
                }
 
-               if (countSymbol == stroka.Length - 1)
+               if (symbolСount == stroka.Length - 1)
                {
                   string subLine = stringModified.ToString();
-                  arrayDouble[countСolumn] = Convert.ToDouble(subLine);
-                  Console.Write(arrayDouble[countСolumn]);
+                  arrayDouble[сolumn] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[сolumn]);
                   stringModified.Clear();
-                  countСolumn++;
+                  сolumn++;
                }
 
-               countSymbol++;
+               symbolСount++;
             }
          }
 
