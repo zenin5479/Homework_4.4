@@ -44,7 +44,7 @@ namespace Homework_4._4
          char symbolSpace = ' ';
          // Счетчик символов
          int countSymbol = 0;
-         // Количества столбцов в строке
+         // Количество столбцов в строке
          int countСolumn = 0;
          if (stroka != null)
          {
