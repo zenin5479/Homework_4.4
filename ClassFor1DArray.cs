@@ -28,9 +28,6 @@ namespace Homework_4._4
          string stroka = null;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
-         
-         
-         
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
@@ -38,7 +35,7 @@ namespace Homework_4._4
          }
 
          streamReader.Close();
-         //Console.WriteLine();
+         Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
          Console.WriteLine(stroka);
 
