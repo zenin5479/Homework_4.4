@@ -42,6 +42,7 @@ namespace Homework_4._4
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          // Символ пробела
          char symbolSpace = ' ';
+         // Счетчик символов
          int countSymbol = 0;
          // Количества столбцов в строке
          int countСolumn = 0;
@@ -70,11 +71,11 @@ namespace Homework_4._4
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[countСolumn];
-         
-         
-         // Количества Символ
-         countSymbol = 0; 
-         // Количества столбцов в строке
+
+
+         // Счетчик символов обнуляем
+         countSymbol = 0;
+         // Количество столбцов в строке обнуляем
          countСolumn = 0;
 
          //int column = 0;
