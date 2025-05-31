@@ -51,14 +51,14 @@ namespace Homework_4._4
          //}
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int[] sizeArray = new int[allLines.Length];
+         int[] sizeArray = new int[stringBuilder.Length];
          char symbolSpace = ' ';
          int countRow = 0;
          int countSymbol = 0;
          int countСolumn = 0;
-         while (countRow < allLines.Length)
+         while (countRow < stringBuilder.Length)
          {
-            string line = allLines[countRow];
+            string line = stringBuilder[countRow].ToString();
             while (countSymbol < line.Length)
             {
                if (symbolSpace == line[countSymbol])
@@ -85,14 +85,14 @@ namespace Homework_4._4
          Console.WriteLine("Одномерный числовой массив");
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
-         double[] arrayDouble = new double[allLines.Length];
+         double[] arrayDouble = new double[stringBuilder.Length];
          char spaceCharacter = ' ';
          int row = 0;
          int column = 0;
          int countCharacter = 0;
          while (row < arrayDouble.Length)
          {
-            string line = allLines[row];
+            string line = stringBuilder[row].ToString();
             while (column < sizeArray[row])
             {
                while (countCharacter < line.Length)
