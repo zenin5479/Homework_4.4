@@ -40,7 +40,7 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int sizeArray; // ?
+         int sizeArray; // ?????
          char symbolSpace = ' ';
          int countSymbol = 0;
          int countСolumn = 0;
@@ -61,7 +61,7 @@ namespace Homework_4._4
          }
 
          sizeArray = countСolumn;
-         //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
+         Console.WriteLine("Количество столбцов {0}", countСolumn);
 
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
@@ -70,7 +70,7 @@ namespace Homework_4._4
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[stroka.Length];
          char spaceCharacter = ' ';
-         
+
          int column = 0;
          int countCharacter = 0;
 
