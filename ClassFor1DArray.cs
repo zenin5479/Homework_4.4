@@ -69,8 +69,9 @@ namespace Homework_4._4
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
          Console.WriteLine("Одномерный числовой массив");
          // Одномерный массив вещественных чисел
-         StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[сolumn];
+         // Построитель строк
+         StringBuilder stringModified = new StringBuilder();
          // Счетчик символов обнуляем
          symbolСount = 0;
          // Количество столбцов в строке обнуляем
