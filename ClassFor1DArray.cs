@@ -37,11 +37,12 @@ namespace Homework_4._4
 
          streamReader.Close();
          //Console.WriteLine();
+         Console.WriteLine("Исходный массив строк");
          Console.WriteLine(ctroka);
 
          // Чтение файла за одну операцию - удалить --
          string[] allLines = File.ReadAllLines(path);
-         Console.WriteLine("Исходный массив строк");
+
          int indexLines = 0;
          while (indexLines < allLines.Length)
          {
