@@ -27,15 +27,15 @@ namespace Homework_4._4
       {
          StringBuilder ctroka = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
-         StreamReader sr = new StreamReader(stream);
-         while (sr.Peek() >= 0)
+         StreamReader streamReader = new StreamReader(stream);
+         while (streamReader.Peek() >= 0)
          {
-            string subLine = sr.ReadLine();
+            string subLine = streamReader.ReadLine();
             ctroka.Append(subLine);
             //Console.Write(subLine);
          }
 
-         sr.Close();
+         streamReader.Close();
          //Console.WriteLine();
          Console.WriteLine(ctroka);
 
