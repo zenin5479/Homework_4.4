@@ -30,9 +30,9 @@ namespace Homework_4._4
          StreamReader streamReader = new StreamReader(stream);
          while (streamReader.Peek() >= 0)
          {
-            string subLine = streamReader.ReadLine();
-            stringBuilder.Append(subLine);
-            //Console.Write(subLine);
+            string stroka = streamReader.ReadLine();
+            stringBuilder.Append(stroka);
+            Console.Write(stroka);
          }
 
          streamReader.Close();
