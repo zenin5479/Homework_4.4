@@ -32,23 +32,13 @@ namespace Homework_4._4
          {
             string stroka = streamReader.ReadLine();
             stringBuilder.Append(stroka);
-            Console.Write(stroka);
+            //Console.Write(stroka);
          }
 
          streamReader.Close();
          //Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
          Console.WriteLine(stringBuilder);
-
-         // Чтение файла за одну операцию - удалить --
-         //string[] allLines = File.ReadAllLines(path);
-         //int indexLines = 0;
-         //while (indexLines < allLines.Length)
-         //{
-         //   allLines[indexLines] = allLines[indexLines];
-         //   Console.WriteLine(allLines[indexLines]);
-         //   indexLines++;
-         //}
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          int[] sizeArray = new int[stringBuilder.Length];
