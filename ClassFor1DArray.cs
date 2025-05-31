@@ -41,7 +41,7 @@ namespace Homework_4._4
          Console.WriteLine(stringBuilder);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int[] sizeArray = new int[stringBuilder.Length];
+         int[] sizeArray = new int[stringBuilder.Length]; // ?
          char symbolSpace = ' ';
          int countRow = 0;
          int countSymbol = 0;
