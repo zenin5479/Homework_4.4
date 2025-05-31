@@ -25,31 +25,30 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         StringBuilder ctroka = new StringBuilder();
+         StringBuilder stringBuilder = new StringBuilder();
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
          while (streamReader.Peek() >= 0)
          {
             string subLine = streamReader.ReadLine();
-            ctroka.Append(subLine);
+            stringBuilder.Append(subLine);
             //Console.Write(subLine);
          }
 
          streamReader.Close();
          //Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
-         Console.WriteLine(ctroka);
+         Console.WriteLine(stringBuilder);
 
          // Чтение файла за одну операцию - удалить --
-         string[] allLines = File.ReadAllLines(path);
-
-         int indexLines = 0;
-         while (indexLines < allLines.Length)
-         {
-            allLines[indexLines] = allLines[indexLines];
-            Console.WriteLine(allLines[indexLines]);
-            indexLines++;
-         }
+         //string[] allLines = File.ReadAllLines(path);
+         //int indexLines = 0;
+         //while (indexLines < allLines.Length)
+         //{
+         //   allLines[indexLines] = allLines[indexLines];
+         //   Console.WriteLine(allLines[indexLines]);
+         //   indexLines++;
+         //}
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          int[] sizeArray = new int[allLines.Length];
