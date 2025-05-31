@@ -31,11 +31,11 @@ namespace Homework_4._4
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
-            Console.Write(stroka);
+            //Console.WriteLine(stroka);
          }
 
          streamReader.Close();
-         Console.WriteLine();
+         //Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
          Console.WriteLine(stroka);
 
