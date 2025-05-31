@@ -26,13 +26,12 @@ namespace Homework_4._4
       public static double[] VvodArray(string path)
       {
          //StringBuilder stringBuilder = new StringBuilder();
-         string stroka;
+         string stroka = null;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
-            stringBuilder.Append(stroka);
             //Console.Write(stroka);
          }
 
@@ -42,14 +41,14 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int[] sizeArray = new int[stringBuilder.Length]; // ?
+         int[] sizeArray = new int[stroka.Length]; // ?
          char symbolSpace = ' ';
          int countRow = 0;
          int countSymbol = 0;
          int countСolumn = 0;
-         while (countRow < stringBuilder.Length)
+         while (countRow < stroka.Length)
          {
-            string line = stringBuilder[countRow].ToString();
+            string line = stroka[countRow].ToString();
             while (countSymbol < line.Length)
             {
                if (symbolSpace == line[countSymbol])
@@ -76,14 +75,14 @@ namespace Homework_4._4
          Console.WriteLine("Одномерный числовой массив");
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
-         double[] arrayDouble = new double[stringBuilder.Length];
+         double[] arrayDouble = new double[stroka.Length];
          char spaceCharacter = ' ';
          int row = 0;
          int column = 0;
          int countCharacter = 0;
          while (row < arrayDouble.Length)
          {
-            string line = stringBuilder[row].ToString();
+            string line = stroka[row].ToString();
             while (column < sizeArray[row])
             {
                while (countCharacter < line.Length)
