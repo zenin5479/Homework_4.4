@@ -71,15 +71,10 @@ namespace Homework_4._4
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[countСolumn];
-
-
          // Счетчик символов обнуляем
          countSymbol = 0;
          // Количество столбцов в строке обнуляем
          countСolumn = 0;
-
-         //int column = 0;
-         //int countCharacter = 0;
          if (stroka != null)
          {
             while (countSymbol < stroka.Length)
