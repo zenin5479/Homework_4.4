@@ -25,19 +25,21 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         string stroka = null;
+         char st;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
+         string stroka = null;
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
             Console.Write(stroka);
          }
 
+         st = Convert.ToChar(stroka);
          streamReader.Close();
          //Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
-         Console.WriteLine(stroka);
+         Console.WriteLine(st);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
          int[] sizeArray = { }; // ?
@@ -46,14 +48,14 @@ namespace Homework_4._4
          int countSymbol = 0;
          int countСolumn = 0;
 
-         while (countSymbol < stroka.Length)
+         while (countSymbol < st.L)
          {
             if (symbolSpace == stroka)
             {
                countСolumn++;
             }
 
-            if (countSymbol == line.Length - 1)
+            if (countSymbol == stroka.Length - 1)
             {
                countСolumn++;
             }
