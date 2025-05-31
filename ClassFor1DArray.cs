@@ -70,45 +70,46 @@ namespace Homework_4._4
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[countСolumn];
-         //char spaceCharacter = ' ';
-         int column = 0;
-         int countCharacter = 0;
+         
+         
+         // Количества Символ
+         countSymbol = 0; 
+         // Количества столбцов в строке
+         countСolumn = 0;
+
+         //int column = 0;
+         //int countCharacter = 0;
          if (stroka != null)
          {
-            while (countCharacter < stroka.Length)
+            while (countSymbol < stroka.Length)
             {
-               if (symbolSpace != stroka[countCharacter])
+               if (symbolSpace != stroka[countSymbol])
                {
-                  stringModified.Append(stroka[countCharacter]);
+                  stringModified.Append(stroka[countSymbol]);
                }
                else
                {
                   string subLine = stringModified.ToString();
-                  arrayDouble[column] = Convert.ToDouble(subLine);
-                  Console.Write(arrayDouble[column] + " ");
+                  arrayDouble[countСolumn] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[countСolumn] + " ");
                   stringModified.Clear();
-                  column++;
+                  countСolumn++;
                }
 
-               if (countCharacter == stroka.Length - 1)
+               if (countSymbol == stroka.Length - 1)
                {
                   string subLine = stringModified.ToString();
-                  arrayDouble[column] = Convert.ToDouble(subLine);
-                  Console.Write(arrayDouble[column]);
+                  arrayDouble[countСolumn] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[countСolumn]);
                   stringModified.Clear();
-                  column++;
+                  countСolumn++;
                }
 
-               countCharacter++;
+               countSymbol++;
             }
          }
 
-
-
-
          Console.WriteLine();
-
-
          return arrayDouble;
       }
 
