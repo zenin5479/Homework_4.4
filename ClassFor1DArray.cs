@@ -40,6 +40,7 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
+         // Символ пробела
          char symbolSpace = ' ';
          int countSymbol = 0;
          // Количества столбцов в строке
@@ -61,7 +62,7 @@ namespace Homework_4._4
                countSymbol++;
             }
 
-            Console.WriteLine("Количество столбцов {0}", countСolumn);
+            //Console.WriteLine("Количество столбцов {0}", countСolumn);
          }
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
@@ -69,15 +70,14 @@ namespace Homework_4._4
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[countСolumn];
-         char spaceCharacter = ' ';
-
+         //char spaceCharacter = ' ';
          int column = 0;
          int countCharacter = 0;
          if (stroka != null)
          {
             while (countCharacter < stroka.Length)
             {
-               if (spaceCharacter != stroka[countCharacter])
+               if (symbolSpace != stroka[countCharacter])
                {
                   stringModified.Append(stroka[countCharacter]);
                }
