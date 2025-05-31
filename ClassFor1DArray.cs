@@ -28,6 +28,9 @@ namespace Homework_4._4
          string stroka = null;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
+         
+         
+         
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
@@ -40,9 +43,9 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int sizeArray = 0; // ?????
          char symbolSpace = ' ';
          int countSymbol = 0;
+         // Количества столбцов в строке
          int countСolumn = 0;
          if (stroka != null)
          {
@@ -61,7 +64,6 @@ namespace Homework_4._4
                countSymbol++;
             }
 
-            sizeArray = countСolumn;
             Console.WriteLine("Количество столбцов {0}", countСolumn);
          }
 
