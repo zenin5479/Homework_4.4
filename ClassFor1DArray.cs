@@ -48,7 +48,7 @@ namespace Homework_4._4
          {
             while (countSymbol < stroka.Length)
             {
-               if (symbolSpace == stroka.Length)
+               if (symbolSpace == stroka[countSymbol])
                {
                   countСolumn++;
                }
