@@ -25,32 +25,29 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         char st;
+         string stroka = null;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
-         string stroka = null;
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
             Console.Write(stroka);
          }
 
-         st = Convert.ToChar(stroka);
          streamReader.Close();
          //Console.WriteLine();
          Console.WriteLine("Исходный массив строк");
-         Console.WriteLine(st);
+         Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int[] sizeArray = { }; // ?
+         int sizeArray; // ?
          char symbolSpace = ' ';
-         int countRow = 0;
          int countSymbol = 0;
          int countСolumn = 0;
 
-         while (countSymbol < st.L)
+         while (stroka != null && countSymbol < stroka.Length)
          {
-            if (symbolSpace == stroka)
+            if (symbolSpace == stroka.Length)
             {
                countСolumn++;
             }
@@ -63,11 +60,8 @@ namespace Homework_4._4
             countSymbol++;
          }
 
-         sizeArray[countRow] = countСolumn;
+         sizeArray = countСolumn;
          //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
-         countСolumn = 0;
-         countRow++;
-         countSymbol = 0;
 
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
@@ -82,7 +76,7 @@ namespace Homework_4._4
          while (row < arrayDouble.Length)
          {
             string line = stroka[row].ToString();
-            while (column < sizeArray[row])
+            while (column < sizeArray)
             {
                while (countCharacter < line.Length)
                {
