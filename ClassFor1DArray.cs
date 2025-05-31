@@ -72,20 +72,18 @@ namespace Homework_4._4
          Console.WriteLine("Одномерный числовой массив");
          // Одномерный массив вещественных чисел
          StringBuilder stringModified = new StringBuilder();
-         double[] arrayDouble = new double[stroka.Length];
+         double[] arrayDouble = new double[countСolumn];
          char spaceCharacter = ' ';
 
          int column = 0;
          int countCharacter = 0;
-
-         string line = stroka;
-         while (column < sizeArray)
+         if (stroka != null)
          {
-            while (countCharacter < line.Length)
+            while (countCharacter < stroka.Length)
             {
-               if (spaceCharacter != line[countCharacter])
+               if (spaceCharacter != stroka[countCharacter])
                {
-                  stringModified.Append(line[countCharacter]);
+                  stringModified.Append(stroka[countCharacter]);
                }
                else
                {
@@ -96,7 +94,7 @@ namespace Homework_4._4
                   column++;
                }
 
-               if (countCharacter == line.Length - 1)
+               if (countCharacter == stroka.Length - 1)
                {
                   string subLine = stringModified.ToString();
                   arrayDouble[column] = Convert.ToDouble(subLine);
@@ -107,9 +105,10 @@ namespace Homework_4._4
 
                countCharacter++;
             }
-
-            countCharacter = 0;
          }
+
+
+
 
          Console.WriteLine();
 
