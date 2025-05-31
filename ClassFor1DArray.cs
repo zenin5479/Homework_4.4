@@ -45,7 +45,7 @@ namespace Homework_4._4
          int countSymbol = 0;
          int countСolumn = 0;
 
-         while (stroka != null && countSymbol < stroka.Length)
+         while (countSymbol < stroka.Length)
          {
             if (symbolSpace == stroka.Length)
             {
@@ -70,48 +70,45 @@ namespace Homework_4._4
          StringBuilder stringModified = new StringBuilder();
          double[] arrayDouble = new double[stroka.Length];
          char spaceCharacter = ' ';
-         int row = 0;
+         
          int column = 0;
          int countCharacter = 0;
-         while (row < arrayDouble.Length)
+
+         string line = stroka;
+         while (column < sizeArray)
          {
-            string line = stroka[row].ToString();
-            while (column < sizeArray)
+            while (countCharacter < line.Length)
             {
-               while (countCharacter < line.Length)
+               if (spaceCharacter != line[countCharacter])
                {
-                  if (spaceCharacter != line[countCharacter])
-                  {
-                     stringModified.Append(line[countCharacter]);
-                  }
-                  else
-                  {
-                     string subLine = stringModified.ToString();
-                     arrayDouble[row] = Convert.ToDouble(subLine);
-                     Console.Write(arrayDouble[row] + " ");
-                     stringModified.Clear();
-                     column++;
-                  }
-
-                  if (countCharacter == line.Length - 1)
-                  {
-                     string subLine = stringModified.ToString();
-                     arrayDouble[row] = Convert.ToDouble(subLine);
-                     Console.Write(arrayDouble[row]);
-                     stringModified.Clear();
-                     column++;
-                  }
-
-                  countCharacter++;
+                  stringModified.Append(line[countCharacter]);
+               }
+               else
+               {
+                  string subLine = stringModified.ToString();
+                  arrayDouble[column] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[column] + " ");
+                  stringModified.Clear();
+                  column++;
                }
 
-               countCharacter = 0;
+               if (countCharacter == line.Length - 1)
+               {
+                  string subLine = stringModified.ToString();
+                  arrayDouble[column] = Convert.ToDouble(subLine);
+                  Console.Write(arrayDouble[column]);
+                  stringModified.Clear();
+                  column++;
+               }
+
+               countCharacter++;
             }
 
-            Console.WriteLine();
-            column = 0;
-            row++;
+            countCharacter = 0;
          }
+
+         Console.WriteLine();
+
 
          return arrayDouble;
       }
