@@ -25,14 +25,13 @@ namespace Homework_4._4
 
       public static double[] VvodArray(string path)
       {
-         //StringBuilder stringBuilder = new StringBuilder();
          string stroka = null;
          FileStream stream = File.Open(path, FileMode.Open, FileAccess.Read);
          StreamReader streamReader = new StreamReader(stream);
          while (streamReader.Peek() >= 0)
          {
             stroka = streamReader.ReadLine();
-            //Console.Write(stroka);
+            Console.Write(stroka);
          }
 
          streamReader.Close();
@@ -41,35 +40,33 @@ namespace Homework_4._4
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
-         int[] sizeArray = new int[stroka.Length]; // ?
+         int[] sizeArray = { }; // ?
          char symbolSpace = ' ';
          int countRow = 0;
          int countSymbol = 0;
          int countСolumn = 0;
-         while (countRow < stroka.Length)
+
+         while (countSymbol < stroka.Length)
          {
-            string line = stroka[countRow].ToString();
-            while (countSymbol < line.Length)
+            if (symbolSpace == stroka)
             {
-               if (symbolSpace == line[countSymbol])
-               {
-                  countСolumn++;
-               }
-
-               if (countSymbol == line.Length - 1)
-               {
-                  countСolumn++;
-               }
-
-               countSymbol++;
+               countСolumn++;
             }
 
-            sizeArray[countRow] = countСolumn;
-            //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
-            countСolumn = 0;
-            countRow++;
-            countSymbol = 0;
+            if (countSymbol == line.Length - 1)
+            {
+               countСolumn++;
+            }
+
+            countSymbol++;
          }
+
+         sizeArray[countRow] = countСolumn;
+         //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
+         countСolumn = 0;
+         countRow++;
+         countSymbol = 0;
+
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
          Console.WriteLine("Одномерный числовой массив");
