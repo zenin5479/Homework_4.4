@@ -138,15 +138,12 @@ namespace Homework_4._4
          }
 
          Console.Write("{0} ", count);
-
          if (count == 0)
          {
             Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
          }
 
          Console.WriteLine();
-
-         // ComparisonValue
          return count;
       }
 
