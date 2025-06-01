@@ -50,7 +50,30 @@ namespace Homework_4._4
          //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 
          double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
-         double[] searchOne = ClassFor1DArray.FindMax(arraySearchOne, nameArrayOne);
+         int searchOne = ClassFor1DArray.FindMax(arraySearchOne, nameArrayOne);
+
+         //if (counta > countb)
+         //{
+         //   if (counta > countc)
+         //   {
+         //      printf("Больше отрицательных в массиве A\n");
+         //   }
+         //   else
+         //   {
+         //      printf("Больше отрицательных в массиве C\n");
+         //   }
+         //}
+         //else
+         //{
+         //   if (countb > countc)
+         //   {
+         //      printf("Больше отрицательных в массиве B\n");
+         //   }
+         //   else
+         //   {
+         //      printf("Больше отрицательных в массиве C\n");
+         //   }
+         //}
 
          Console.ReadKey();
       }

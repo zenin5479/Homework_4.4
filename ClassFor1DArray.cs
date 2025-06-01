@@ -114,7 +114,7 @@ namespace Homework_4._4
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
          double[] outputArray = new double[n];
-         for (int i = 0; i < n; i++)
+         for (int i = 0; i < n; i++) // заменить на while
          {
             outputArray[i] = inputArray[i];
             //Console.Write("{0:f2} ", outputArray[i]);
@@ -126,8 +126,48 @@ namespace Homework_4._4
          return outputArray;
       }
 
-      public static double[] FindMax(double[] inputArray, string nameArray)
+      public static int FindMax(double[] inputArray, string nameArray)
       {
+
+
+         //int countx = 0;
+         //for (int i = 0; i < n; i++)
+         //{
+         //   if (x[i] < 0)
+         //   {
+         //      countx++;
+         //   }
+         //}
+
+         //if (countx == 0)
+         //{
+         //   printf("В массиве нет отрицательных элементов\n");
+         //}
+
+         //return countx;
+
+         int outputArray = 0;
+         for (int i = 0; i < inputArray.Length; i++)
+         {
+            if (inputArray[i] < 0)
+            {
+               outputArray++;
+            }
+         }
+
+         Console.Write("{0:f2} ", outputArray);
+         Console.Write("{0:f} ", outputArray);
+         Console.Write("{0} ", outputArray);
+
+         if (outputArray == 0)
+         {
+            Console.WriteLine("В массиве нет отрицательных элементов\n");
+         }
+
+
+         Console.WriteLine();
+         return outputArray;
+
          // Поиск максимального элемента строки (без флагов bool)
          double[] arrayMax = new double[inputArray.GetLength(0)];
          int rowOut = 0;
@@ -163,8 +203,6 @@ namespace Homework_4._4
          Console.WriteLine();
          return arrayMax;
       }
-
-
 
       public static double[,] VvodArray(int n, int m)
       {
