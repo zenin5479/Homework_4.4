@@ -129,7 +129,7 @@ namespace Homework_4._4
       public static int FindMax(double[] inputArray, string nameArray)
       {
          int count = 0;
-         for (int i = 0; i < inputArray.Length; i++)
+         for (int i = 0; i < inputArray.Length; i++) // заменить на while
          {
             if (inputArray[i] < 0)
             {
