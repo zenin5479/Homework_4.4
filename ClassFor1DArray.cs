@@ -119,7 +119,7 @@ namespace Homework_4._4
             outputArray[i] = inputArray[i];
             Console.Write("{0:f2} ", outputArray[i]);
             Console.Write("{0:f} ", outputArray[i]);
-            Console.Write("{0} ", outputArray[i, j]);
+            Console.Write("{0} ", outputArray[i]);
 
             Console.WriteLine();
          }
