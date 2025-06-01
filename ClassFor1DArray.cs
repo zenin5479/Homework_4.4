@@ -122,6 +122,7 @@ namespace Homework_4._4
             Console.Write("{0} ", outputArray[i]);
          }
 
+         Console.WriteLine();
          return outputArray;
       }
 
