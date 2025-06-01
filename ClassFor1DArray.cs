@@ -126,6 +126,7 @@ namespace Homework_4._4
          return outputArray;
       }
 
+      //
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
@@ -147,6 +148,7 @@ namespace Homework_4._4
          return count;
       }
 
+      //
       public static void ComparisonValue(int a, int b, int c)
       {
          if (a > b)
