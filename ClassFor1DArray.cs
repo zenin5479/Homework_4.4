@@ -137,7 +137,6 @@ namespace Homework_4._4
             }
          }
 
-         Console.Write("{0:f2} ", count);
          Console.Write("{0:f} ", count);
          Console.Write("{0} ", count);
 
