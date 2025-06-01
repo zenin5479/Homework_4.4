@@ -50,7 +50,7 @@ namespace Homework_4._4
          //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 
          double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
-         int searchOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
 
          Console.ReadKey();
       }
