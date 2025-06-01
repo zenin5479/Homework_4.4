@@ -150,7 +150,7 @@ namespace Homework_4._4
          return count;
       }
 
-      public static void FileWriteArray(int a, int b, int c)
+      public static void ComparisonValue(int a, int b, int c)
       {
          if (a > b)
          {
@@ -160,24 +160,18 @@ namespace Homework_4._4
             }
             else
             {
-               Console.WriteLine("Больше отрицательных в массиве A");
-
-               printf("Больше отрицательных в массиве C\n");
+               Console.WriteLine("Больше отрицательных в массиве C");
             }
          }
          else
          {
-            if (countb > countc)
+            if (b > c)
             {
-               Console.WriteLine("Больше отрицательных в массиве A");
-
-               printf("Больше отрицательных в массиве B\n");
+               Console.WriteLine("Больше отрицательных в массиве B");
             }
             else
             {
-               Console.WriteLine("Больше отрицательных в массиве A");
-
-               printf("Больше отрицательных в массиве C\n");
+               Console.WriteLine("Больше отрицательных в массиве C");
             }
          }
       }
