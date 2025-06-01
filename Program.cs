@@ -50,6 +50,7 @@ namespace Homework_4._4
          //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 
          double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
+         double[] searchOne = ClassFor1DArray.FindMax(arraySearchOne, nameArrayOne);
 
          Console.ReadKey();
       }
