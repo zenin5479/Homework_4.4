@@ -117,7 +117,7 @@ namespace Homework_4._4
          for (int i = 0; i < n; i++)
          {
             outputArray[i] = inputArray[i];
-            //Console.Write("{0:f2} ", outputArray[i]);
+            Console.Write("{0:f2} ", outputArray[i]);
             Console.Write("{0:f} ", outputArray[i]);
             Console.Write("{0} ", outputArray[i]);
          }
