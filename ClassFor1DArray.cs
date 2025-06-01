@@ -145,8 +145,44 @@ namespace Homework_4._4
          }
 
          Console.WriteLine();
+
+         // ComparisonValue
          return count;
       }
+
+      public static void FileWriteArray(int a, int b, int c)
+      {
+         if (a > b)
+         {
+            if (a > c)
+            {
+               Console.WriteLine("Больше отрицательных в массиве A");
+            }
+            else
+            {
+               Console.WriteLine("Больше отрицательных в массиве A");
+
+               printf("Больше отрицательных в массиве C\n");
+            }
+         }
+         else
+         {
+            if (countb > countc)
+            {
+               Console.WriteLine("Больше отрицательных в массиве A");
+
+               printf("Больше отрицательных в массиве B\n");
+            }
+            else
+            {
+               Console.WriteLine("Больше отрицательных в массиве A");
+
+               printf("Больше отрицательных в массиве C\n");
+            }
+         }
+      }
+
+
 
       public static double[,] VvodArray(int n, int m)
       {
