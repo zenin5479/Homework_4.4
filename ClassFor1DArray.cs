@@ -36,7 +36,7 @@ namespace Homework_4._4
 
          streamReader.Close();
          //Console.WriteLine();
-         Console.WriteLine("Исходный массив строк");
+         Console.WriteLine("Исходный строковый массив {0}", nameArray);
          Console.WriteLine(stroka);
 
          // Определение количества столбцов в строке разделением строки на подстроки по пробелу
@@ -67,7 +67,7 @@ namespace Homework_4._4
          }
 
          // Разделение строки на подстроки по пробелу и конвертация подстрок в double
-         Console.WriteLine("Одномерный числовой массив");
+         Console.WriteLine("Массив вещественных чисел {0}", nameArray);
          // Одномерный массив вещественных чисел
          double[] arrayDouble = new double[сolumn];
          // Построитель строк
@@ -110,9 +110,9 @@ namespace Homework_4._4
          return arrayDouble;
       }
 
-      public static double[] InputArray(double[] inputArray, int n)
+      public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
-         Console.WriteLine("Числовой массив для проведения поиска");
+         Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
          double[] outputArray = new double[n];
          for (int i = 0; i < n; i++)
          {
