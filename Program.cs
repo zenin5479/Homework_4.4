@@ -45,7 +45,7 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne);
+         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
          //double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
          //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 

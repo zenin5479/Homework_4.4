@@ -23,7 +23,7 @@ namespace Homework_4._4
          return n;
       }
 
-      public static double[] VvodArray(string path)
+      public static double[] VvodArray(string path, string nameArray)
       {
          string stroka = null;
          FileStream filestream = File.Open(path, FileMode.Open, FileAccess.Read);
