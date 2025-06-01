@@ -126,7 +126,7 @@ namespace Homework_4._4
          return outputArray;
       }
 
-      public static int FindMax(double[] inputArray, string nameArray)
+      public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
          for (int i = 0; i < inputArray.Length; i++) // заменить на while
@@ -137,7 +137,6 @@ namespace Homework_4._4
             }
          }
 
-         Console.Write("{0:f} ", count);
          Console.Write("{0} ", count);
 
          if (count == 0)
