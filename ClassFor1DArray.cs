@@ -116,9 +116,9 @@ namespace Homework_4._4
          double[] outputArray = new double[n];
          for (int i = 0; i < n; i++)
          {
-            outputArray[i, j] = inputArray[i, j];
-            Console.Write("{0:f2} ", outputArray[i, j]);
-            Console.Write("{0:f} ", outputArray[i, j]);
+            outputArray[i] = inputArray[i];
+            Console.Write("{0:f2} ", outputArray[i]);
+            Console.Write("{0:f} ", outputArray[i]);
             Console.Write("{0} ", outputArray[i, j]);
 
             Console.WriteLine();
