@@ -24,8 +24,8 @@ namespace Homework_4._4
          string nameArrayThree = "C";
 
          int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
-         //int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
-         //int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
+         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
 
          string filePathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(filePathOne))
@@ -46,12 +46,16 @@ namespace Homework_4._4
          }
 
          double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
-         //double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
-         //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
+         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameArrayTwo);
+         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameArrayThree);
 
          double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
-         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
+         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
+         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         int countTwo = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         int countRhree = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
          Console.ReadKey();
       }
    }
