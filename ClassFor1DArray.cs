@@ -110,6 +110,7 @@ namespace Homework_4._4
          return arrayDouble;
       }
 
+      //
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
@@ -151,6 +152,7 @@ namespace Homework_4._4
       //
       public static void ComparisonValue(int a, int b, int c)
       {
+         // Учитывать равное количество отрицательных чисел
          if (a > b)
          {
             if (a > c)
