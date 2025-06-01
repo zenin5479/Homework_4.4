@@ -128,80 +128,26 @@ namespace Homework_4._4
 
       public static int FindMax(double[] inputArray, string nameArray)
       {
-
-
-         //int countx = 0;
-         //for (int i = 0; i < n; i++)
-         //{
-         //   if (x[i] < 0)
-         //   {
-         //      countx++;
-         //   }
-         //}
-
-         //if (countx == 0)
-         //{
-         //   printf("В массиве нет отрицательных элементов\n");
-         //}
-
-         //return countx;
-
-         int outputArray = 0;
+         int count = 0;
          for (int i = 0; i < inputArray.Length; i++)
          {
             if (inputArray[i] < 0)
             {
-               outputArray++;
+               count++;
             }
          }
 
-         Console.Write("{0:f2} ", outputArray);
-         Console.Write("{0:f} ", outputArray);
-         Console.Write("{0} ", outputArray);
+         Console.Write("{0:f2} ", count);
+         Console.Write("{0:f} ", count);
+         Console.Write("{0} ", count);
 
-         if (outputArray == 0)
+         if (count == 0)
          {
-            Console.WriteLine("В массиве нет отрицательных элементов\n");
-         }
-
-
-         Console.WriteLine();
-         return outputArray;
-
-         // Поиск максимального элемента строки (без флагов bool)
-         double[] arrayMax = new double[inputArray.GetLength(0)];
-         int rowOut = 0;
-         int columnOut = 0;
-         while (rowOut < inputArray.GetLength(0))
-         {
-            // Cчитаем, что максимум - это первый элемент строки
-            double maxOut = inputArray[rowOut, 0];
-            while (columnOut < inputArray.GetLength(1))
-            {
-               if (maxOut < inputArray[rowOut, columnOut])
-               {
-                  maxOut = inputArray[rowOut, columnOut];
-               }
-
-               columnOut++;
-            }
-
-            arrayMax[rowOut] = maxOut;
-            //Console.WriteLine("Максимум в строке {0} равен: {1}", rowOut, maxOut);
-            columnOut = 0;
-            rowOut++;
-         }
-
-         Console.WriteLine("Массив максимальных значений строк");
-         int indexMax = 0;
-         while (indexMax < arrayMax.Length)
-         {
-            Console.Write("{0} ", arrayMax[indexMax]);
-            indexMax++;
+            Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
          }
 
          Console.WriteLine();
-         return arrayMax;
+         return count;
       }
 
       public static double[,] VvodArray(int n, int m)
