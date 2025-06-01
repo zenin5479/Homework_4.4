@@ -120,8 +120,6 @@ namespace Homework_4._4
             //Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
             Console.Write("{0} ", outputArray[i]);
-
-            Console.WriteLine();
          }
 
          return outputArray;
