@@ -49,7 +49,7 @@ namespace Homework_4._4
          //double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo);
          //double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree);
 
-         double[] arraySearchOne = ClassFor1DArray.VvodArray(filePathOne);
+         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne);
 
          Console.ReadKey();
       }
