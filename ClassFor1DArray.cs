@@ -170,11 +170,7 @@ namespace Homework_4._4
          {
             Console.WriteLine("Больше отрицательных в массиве B");
          }
-         if (a < c)
-         {
-            Console.WriteLine("Больше отрицательных в массиве C");
-         }
-         if (b < c)
+         if (c>a && c>b)
          {
             Console.WriteLine("Больше отрицательных в массиве C");
          }
