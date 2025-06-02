@@ -172,7 +172,7 @@ namespace Homework_4._4
          }
          if (c > a && c > b)
          {
-            Console.WriteLine("Больше отрицательных в массиве C");
+            Console.WriteLine("Больше отрицательных элементов в массиве C");
          }
       }
 
