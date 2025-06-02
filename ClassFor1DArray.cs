@@ -147,7 +147,7 @@ namespace Homework_4._4
          {
             Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
          }
-
+         // 20, 11, 10
          Console.WriteLine();
          return count;
       }
@@ -156,6 +156,7 @@ namespace Homework_4._4
       public static void ComparisonValue(int a, int b, int c)
       {
          // Учитывать равное количество отрицательных чисел
+         // 20, 11, 10
          if (a > b)
          {
             if (a > c)
