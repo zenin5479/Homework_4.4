@@ -110,7 +110,6 @@ namespace Homework_4._4
          return arrayDouble;
       }
 
-      //
       public static double[] InputArray(double[] inputArray, int n, string nameArray)
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
@@ -122,8 +121,6 @@ namespace Homework_4._4
             //Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
             Console.Write("{0} ", outputArray[i]);
-            
-            
             i++;
          }
 
