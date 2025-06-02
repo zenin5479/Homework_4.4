@@ -159,14 +159,15 @@ namespace Homework_4._4
 
          if (a == b && a == c)
          {
-            Console.WriteLine("Больше отрицательных в массиве A");
+            Console.WriteLine("Отрицательных элементов в массивах A, В, С равное количество");
          }
 
          if (a > b)
          {
             Console.WriteLine("Больше отрицательных в массиве A");
          }
-         else
+
+         if (a < b)
          {
             Console.WriteLine("Больше отрицательных в массиве B");
          }
@@ -175,7 +176,9 @@ namespace Homework_4._4
          {
             Console.WriteLine("Больше отрицательных в массиве A");
          }
-         else
+
+
+         if (a < c)
          {
             Console.WriteLine("Больше отрицательных в массиве C");
          }
@@ -184,7 +187,7 @@ namespace Homework_4._4
          {
             Console.WriteLine("Больше отрицательных в массиве B");
          }
-         else
+         if (b < c)
          {
             Console.WriteLine("Больше отрицательных в массиве C");
          }
