@@ -132,6 +132,11 @@ namespace Homework_4._4
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
+         while ()
+         {
+            
+         }
+         
          for (int i = 0; i < inputArray.Length; i++) // заменить на while
          {
             if (inputArray[i] < 0)
