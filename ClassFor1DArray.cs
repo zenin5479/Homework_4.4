@@ -128,7 +128,6 @@ namespace Homework_4._4
          return outputArray;
       }
 
-      //
       public static int SearchingNegativeNumbers(double[] inputArray, string nameArray)
       {
          int count = 0;
