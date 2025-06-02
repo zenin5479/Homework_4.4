@@ -156,29 +156,32 @@ namespace Homework_4._4
       {
          // Учитывать равное количество отрицательных чисел
          // 20, 11, 10
-
-
+         
          if (a > b)
          {
-            if (a > c)
-            {
-               Console.WriteLine("Больше отрицательных в массиве A");
-            }
-            else
-            {
-               Console.WriteLine("Больше отрицательных в массиве C");
-            }
+            Console.WriteLine("Больше отрицательных в массиве A");
          }
          else
          {
-            if (b > c)
-            {
-               Console.WriteLine("Больше отрицательных в массиве B");
-            }
-            else
-            {
-               Console.WriteLine("Больше отрицательных в массиве C");
-            }
+            Console.WriteLine("Больше отрицательных в массиве B");
+         }
+
+         if (a > c)
+         {
+            Console.WriteLine("Больше отрицательных в массиве A");
+         }
+         else
+         {
+            Console.WriteLine("Больше отрицательных в массиве C");
+         }
+
+         if (b > c)
+         {
+            Console.WriteLine("Больше отрицательных в массиве B");
+         }
+         else
+         {
+            Console.WriteLine("Больше отрицательных в массиве C");
          }
       }
 
