@@ -135,18 +135,15 @@ namespace Homework_4._4
          int i = 0;
          while (i < inputArray.Length)
          {
-            i++;
-         }
-
-         for (  ) // заменить на while
-         {
             if (inputArray[i] < 0)
             {
                count++;
             }
+
+            i++;
          }
 
-         Console.Write("{0} ", count);
+         Console.Write("{0}", count);
          if (count == 0)
          {
             Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
