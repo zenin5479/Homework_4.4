@@ -164,7 +164,7 @@ namespace Homework_4._4
          }
          if (a > b && a > c)
          {
-            Console.WriteLine("Больше отрицательных в массиве A");
+            Console.WriteLine("Больше отрицательных элементов в массиве A");
          }
          if (b > a && b > c)
          {
