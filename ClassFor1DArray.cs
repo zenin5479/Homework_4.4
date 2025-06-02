@@ -115,12 +115,16 @@ namespace Homework_4._4
       {
          Console.WriteLine("Массив вещественных чисел {0} для проведения поиска", nameArray);
          double[] outputArray = new double[n];
-         for (int i = 0; i < n; i++) // заменить на while
+         int i = 0; 
+         while (i < n)
          {
-            outputArray[i] = inputArray[i];
+             outputArray[i] = inputArray[i];
             //Console.Write("{0:f2} ", outputArray[i]);
             //Console.Write("{0:f} ", outputArray[i]);
             Console.Write("{0} ", outputArray[i]);
+            
+            
+            i++;
          }
 
          Console.WriteLine();
