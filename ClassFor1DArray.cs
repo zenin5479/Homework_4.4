@@ -142,8 +142,7 @@ namespace Homework_4._4
             i++;
          }
 
-         Console.WriteLine("В массиве {0}: {1} отрицательных элементов", nameArray, count);
-         //Console.Write("{0}", count);
+         Console.WriteLine("В массиве {0} отрицательных элементов: {1}", nameArray, count);
          if (count == 0)
          {
             Console.WriteLine("В массиве {0} нет отрицательных элементов", nameArray);
