@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using LibraryFor1DArray;
 
 // Обработка трех массивов
 // Дано 3 одномерных массива A, B и C разного размера
@@ -23,9 +24,9 @@ namespace Homework_4._4
          string nameArrayTwo = "B";
          string nameArrayThree = "C";
 
-         int elementsOne = ClassFor1DArray.NumberArrayElements(nameArrayOne);
-         int elementsTwo = ClassFor1DArray.NumberArrayElements(nameArrayTwo);
-         int elementsThree = ClassFor1DArray.NumberArrayElements(nameArrayThree);
+         int elementsOne = VariousMethods.NumberArrayElements(nameArrayOne);
+         int elementsTwo = VariousMethods.NumberArrayElements(nameArrayTwo);
+         int elementsThree = VariousMethods.NumberArrayElements(nameArrayThree);
 
          string filePathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(filePathOne))
@@ -45,18 +46,18 @@ namespace Homework_4._4
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
 
-         double[] arrayDoubleOne = ClassFor1DArray.VvodArray(filePathOne, nameArrayOne);
-         double[] arrayDoubleTwo = ClassFor1DArray.VvodArray(filePathTwo, nameArrayTwo);
-         double[] arrayDoubleThree = ClassFor1DArray.VvodArray(filePathThree, nameArrayThree);
+         double[] arrayDoubleOne = VariousMethods.VvodArray(filePathOne, nameArrayOne);
+         double[] arrayDoubleTwo = VariousMethods.VvodArray(filePathTwo, nameArrayTwo);
+         double[] arrayDoubleThree = VariousMethods.VvodArray(filePathThree, nameArrayThree);
 
-         double[] arraySearchOne = ClassFor1DArray.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
-         double[] arraySearchTwo = ClassFor1DArray.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
-         double[] arraySearchThree = ClassFor1DArray.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
+         double[] arraySearchOne = VariousMethods.InputArray(arrayDoubleOne, elementsOne, nameArrayOne);
+         double[] arraySearchTwo = VariousMethods.InputArray(arrayDoubleTwo, elementsTwo, nameArrayTwo);
+         double[] arraySearchThree = VariousMethods.InputArray(arrayDoubleThree, elementsThree, nameArrayThree);
 
-         int countOne = ClassFor1DArray.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
-         int countTwo = ClassFor1DArray.SearchingNegativeNumbers(arraySearchTwo, nameArrayTwo);
-         int countThree = ClassFor1DArray.SearchingNegativeNumbers(arraySearchThree, nameArrayThree);
-         ClassFor1DArray.ComparisonValue(countOne, countTwo, countThree);
+         int countOne = VariousMethods.SearchingNegativeNumbers(arraySearchOne, nameArrayOne);
+         int countTwo = VariousMethods.SearchingNegativeNumbers(arraySearchTwo, nameArrayTwo);
+         int countThree = VariousMethods.SearchingNegativeNumbers(arraySearchThree, nameArrayThree);
+         VariousMethods.ComparisonValue(countOne, countTwo, countThree);
 
          Console.ReadKey();
       }
