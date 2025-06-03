@@ -151,7 +151,6 @@ namespace Homework_4._4
          return count;
       }
 
-      //
       public static void ComparisonValue(int a, int b, int c)
       {
          if (a == b && a == c)
