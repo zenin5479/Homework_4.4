@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Homework_4._4
 {
-   internal class ClassFor1DArray
+   internal class MethodsForArray
    {
       public static int NumberArrayElements(string nameArray)
       {
